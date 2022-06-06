@@ -27,3 +27,8 @@ header {
 .menu .menu_item .menu_link:hover {
    text-decoration: underline;
 }
+
+.menu .menu_item {
+   border-right: 2px dotted white;
+   padding-right: 28px;
+}
