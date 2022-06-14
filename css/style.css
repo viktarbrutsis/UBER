@@ -33,3 +33,24 @@ nav {
    padding-right: 28px;
 }
 
+.subheader {
+   height: 84px;
+   /* background: #000000;
+   opacity: 0.6; */
+   background: rgba(0, 0, 0, 0.6)
+}
+
+.subheader .subheader_logo {
+   display: block;
+   max-width: 100%;
+   margin-top: 12px;
+}
+
+.subheader_official {
+  
+   opacity: 0.6;
+   font-weight: 100;
+   font-size: 13px;
+   color: #FFFFFF;
+   margin-top: 4px;
+}
