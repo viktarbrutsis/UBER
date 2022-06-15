@@ -55,8 +55,8 @@ nav {
    margin-top: 4px;
 }
 
-.subheader .subheader_call_text {
-   margin-top: 7px;
+.subheader .subheader_call {
+   margin-top: 17px;
    text-align: right;
    font-style: Regular;
    font-size: 12px;
@@ -64,20 +64,28 @@ nav {
 }
 
 .subheader .subheader_call_number {
+   display: block;
    text-align: right;
    font-style: Regular;
    font-size: 22px;
    color: #FFFFFF;
+   text-decoration: none;
+   line-height: 12px;
+   margin-top: 8px;
 }
 
 .subheader .subheader_btn {
-  
-   text-transform: uppercase;
-   margin-top: 19px;
    width: 172px;
    height: 46px;
-   background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);;
-   box-shadow: inset 0px, -3px rgba(0, 0, 0, 0.12);
-   
+   box-shadow: inset 0px, -3px 0 rgba(0, 0, 0, 0.12);
+   /* border: 3px solid rgba(0, 0, 0, 0.07); */
+   border: none;
+   background-image: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%);
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+   text-transform: uppercase;
+   color:#ffffff;
+   margin-top: 19px;
+   font-size: 14px;   
+   font-weight: 400;
    border-radius: 4px;
 }
