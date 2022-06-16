@@ -189,15 +189,17 @@ header {
 }
 
 .advant .adv_1 {
+   min-height: 180px;
    display: flex;
    justify-content: center;
    align-items: center;
    margin-bottom: 23px;
+   border: 1px dashed black;
 }
 
 .advant .adv_photo_1 {
    background-color: #1EACC7;
-   border-radius: 50%;
+   border-radius: 100%;
    width: 116px;
    height: 102px;
    display: flex;
@@ -221,6 +223,7 @@ header {
    text-align: left;
    font-weight: 300;
    line-height: 17px;
+
 }
 
 .mobile {
