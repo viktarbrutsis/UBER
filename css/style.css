@@ -33,6 +33,17 @@ nav {
    padding-right: 28px;
 }
 
+/*Как сделать чтобы картинка накладывалась*/
+
+header {
+   position: relative;
+}
+.subheader {
+   position: absolute;
+   width: 100%;
+}
+
+
 .subheader {
    height: 84px;
    /* background: #000000;
@@ -88,4 +99,81 @@ nav {
    font-size: 14px;   
    font-weight: 400;
    border-radius: 4px;
+}
+
+.promo {
+   min-height: 800px;
+   background: url(../img/uber_bg.png) center center/cover no-repeat;
+   padding: 152px 0 180px 0;
+
+}
+
+.promo .promo_header {
+   margin-top:0;
+   font-size: 60px;
+   line-height: 60px;
+   font-weight: 700;
+   text-transform: uppercase;
+   box-align: center;
+   display: block;
+   color: #ffffff;
+   text-align: center;
+
+}
+
+.promo .promo_subheader {
+   
+   font-size: 36px;
+   font-weight: 700;
+   text-transform: uppercase;
+   box-align: center;
+   color: #ffffff;
+   line-height: 36px;
+   margin-top: 28px;
+   text-align: center;
+}
+
+.promo .promo_descr {
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+   text-align: center;
+   color: #ffffff;
+   margin-top: 30px;
+}
+
+.promo .promo_btn {
+   width: 259px;
+   height: 63px;
+   box-shadow: inset 0px, -3px 0 rgba(0, 0, 0, 0.12);
+   /* border: 3px solid rgba(0, 0, 0, 0.07); */
+   border: none;
+   background-image: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%);
+   text-transform: uppercase;
+   color:#ffffff;
+   margin-top: 19px;
+   font-size: 18px;   
+   font-weight: 400;
+   border-radius: 4px;
+   display: block;
+   margin: 120px auto 0 auto;
+}
+
+
+
+.advant .adv_1 {
+   width: 116px;
+   height: 102px;
+   background-color:#1EACC7;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.advant .adv_text_1 {
+   width: 343px;
+   margin-left: 245px;
+   background-color: red;
+   font-size: 15px;
+   line-height: 21px;
 }
