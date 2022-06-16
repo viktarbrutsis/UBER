@@ -159,21 +159,109 @@ header {
    margin: 120px auto 0 auto;
 }
 
+.advant {
+   min-height: 805px;
+   margin-top: 64px;
+ 
+}
 
-
-.advant .adv_1 {
-   width: 116px;
-   height: 102px;
-   background-color:#1EACC7;
-   border-radius: 50%;
+.advant .adv_header {
+   width: 113px;
+   height: 21px;
+   display: block;
+   margin: 50px auto 0 auto;
+   background-color: black;
+   color: #ffffff;
+   font-size: 11px;
+   text-transform: uppercase;
    display: flex;
    justify-content: center;
    align-items: center;
 }
-.advant .adv_text_1 {
-   width: 343px;
-   margin-left: 245px;
-   background-color: red;
-   font-size: 15px;
-   line-height: 21px;
+
+.advant .adv_subheader {
+   font-size: 38px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   margin-bottom: 14px;
 }
+
+.advant .adv_1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 23px;
+}
+
+.advant .adv_photo_1 {
+   background-color: #1EACC7;
+   border-radius: 50%;
+   width: 116px;
+   height: 102px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.reason_text {
+   color:#1EACC7;
+   font-size: 17px;
+   font-weight: 400;
+}
+
+.advant .adv_text_1 {
+   
+   width: 350px;
+   height: 130px;
+   margin-left: 25px;
+   font-size: 15px;
+   line-height: 15px;
+   text-align: left;
+   font-weight: 300;
+   line-height: 17px;
+}
+
+.mobile {
+   min-height: 864px;
+   background: url(../img/mobile_bg.png) center center/cover no-repeat;
+   padding-top: 48px;
+}
+
+.mobile .mobile_header {
+   width: 113px;
+   height: 21px;
+   display: block;
+   margin: 0 auto;
+   background-color: black;
+   color: #ffffff;
+   font-size: 11px;
+   text-transform: uppercase;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.mobile .mobile_subheader {
+   font-size: 38px;
+   text-transform: uppercase;
+   margin-top: 33px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 700;
+}
+
+.mobile .mobile_sub_subheader {
+   font-size: 17px;
+   text-transform: uppercase;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 400;
+}
+
+
+
