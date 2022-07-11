@@ -2,10 +2,16 @@
    font-family: 'Roboto', sans-serif;
 }
 
+header {
+   position: relative;
+   height: 50px; /* * */
+}
 nav {
+   position: fixed; /* * */
+   width: 100%; /* * */
    height: 50px;
-   background: #212121;
- 
+   background-color: #212121;
+   z-index: 2; /* * */
 }
 
 .menu {
@@ -35,20 +41,14 @@ nav {
 
 /*Как сделать чтобы картинка накладывалась*/
 
-header {
-   position: relative;
-}
 .subheader {
    position: absolute;
+   top: 50px; /* * */
    width: 100%;
-}
-
-
-.subheader {
    height: 84px;
+   background-color: rgba(0,0,0, .6);
    /* background: #000000;
    opacity: 0.6; */
-   background: rgba(0, 0, 0, 0.6)
 }
 
 .subheader .subheader_logo {
