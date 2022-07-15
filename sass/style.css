@@ -286,7 +286,7 @@ nav {
 .choice {
   min-height: 896px;
   position: relative;
-  background: url("../img/choice_bg.png") center center/cover no-repeat;
+  /* background: url("../img/choice_bg.png") center center/cover no-repeat; */
 }
 
 .black {
