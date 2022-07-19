@@ -284,9 +284,24 @@ nav {
 }
 
 .choice {
-  min-height: 896px;
   position: relative;
-  /* background: url("../img/choice_bg.png") center center/cover no-repeat; */
+  min-height: 896px;
+  padding: 55px 0 138px 0;
+  background: url("../img/choice_bg.png") center center/cover no-repeat;
+}
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 55px auto 0 auto;
+  z-index: 2;
+}
+.choice_descr {
+  text-align: center;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222222;
 }
 
 .black {
