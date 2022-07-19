@@ -1,6 +1,10 @@
 $reasons_color: #1eacc7
 $requirements_color: #ff5656
 
+=style_btn
+  background-image: none
+  background-color: blue
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -84,6 +88,8 @@ nav
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    &:hover
+      +style_btn
 
 .promo
   min-height: 800px
@@ -117,7 +123,7 @@ nav
     text-align: center
     margin-top: 23px
 
-  .promo_btn
+  &_btn
     display: block
     margin: 118px auto 0 auto
     width: 259px
@@ -131,6 +137,8 @@ nav
     font-size: 18px
     font-weight: 400
     text-transform: uppercase
+    &:hover
+      +style_btn
 
 .reasons
   padding: 71px 0 65px 0
@@ -245,24 +253,41 @@ nav
       text-transform: uppercase
       text-align: center
     &_plus
-      display: flex
+      display: flex 
       justify-content: center
-      text-align: center
+      align-items: center
       position: absolute
-      width: 29px
-      height: 29px
-      background: #000000
-      border-radius: 50%
-      margin: 0 auto 
       bottom: 35px
-      left: 145px
-      padding: 7.5px
+      left: 50%
+      transform: translateX(-50%)
+      width: 26px
+      height: 26px
+      background-color: #000000
+      margin: 0 auto
+      border-radius: 100%
       cursor: pointer
-      img
-       
+      &:before
+        content: ''
+        display: block
+        background-color: $reasons_color
         width: 14px
+        height: 2px
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        background-color: $reasons_color
+        width: 2px
         height: 14px
-        margin: 0 auto 
+        left: 50%
+        transform: translateX(-50%)
+      &:hover
+        &:before, &:after
+          background-color: $requirements_color
+
+
+        
+      
 .choice
   position: relative
   min-height: 896px
@@ -288,6 +313,9 @@ nav
   z-index: 1
   top: 0
   left: 0
+.terms
+  height: 764px
+  width: 1190px
 
     
 
