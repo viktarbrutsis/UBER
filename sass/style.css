@@ -88,6 +88,10 @@ nav {
   font-weight: 400;
   text-transform: uppercase;
 }
+.subheader_btn:hover {
+  background-image: none;
+  background-color: blue;
+}
 
 .promo {
   min-height: 800px;
@@ -121,7 +125,7 @@ nav {
   text-align: center;
   margin-top: 23px;
 }
-.promo .promo_btn {
+.promo_btn {
   display: block;
   margin: 118px auto 0 auto;
   width: 259px;
@@ -135,6 +139,10 @@ nav {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
+}
+.promo_btn:hover {
+  background-image: none;
+  background-color: blue;
 }
 
 .reasons {
@@ -264,22 +272,37 @@ nav {
 .mobile_item_plus {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   position: absolute;
-  width: 29px;
-  height: 29px;
-  background: #000000;
-  border-radius: 50%;
-  margin: 0 auto;
   bottom: 35px;
-  left: 145px;
-  padding: 7.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
   cursor: pointer;
 }
-.mobile_item_plus img {
+.mobile_item_plus:before {
+  content: "";
+  display: block;
+  background-color: #1eacc7;
   width: 14px;
+  height: 2px;
+}
+.mobile_item_plus:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #1eacc7;
+  width: 2px;
   height: 14px;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
 }
 
 .choice {
@@ -311,4 +334,15 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
+}
+
+.terms {
+  width: 1130px;
+  height: 764px;
+  border: 3px solid black;
+  margin-top: 66px;
+  margin-bottom: 81px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
