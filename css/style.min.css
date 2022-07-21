@@ -337,6 +337,8 @@ nav {
 }
 
 .terms {
-  height: 764px;
-  width: 1190px;
+  padding: 35px 0 87px 0;
+}
+.terms_block {
+  margin: 33px 0 61px 0;
 }
