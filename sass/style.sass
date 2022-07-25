@@ -316,7 +316,7 @@ nav
 .terms
   padding: 35px 0 87px 0
   &_block
-    margin: 33px 0
+    margin: 33px 0 0 0
     &_btn
       margin-bottom: 30px
   &_title
@@ -364,7 +364,7 @@ nav
   background: url('../img/world_bg.png')
   &_btn
     display: block
-    margin: 400px auto 25px auto
+    margin: 400px auto 0 auto
     width: 223px
     height: 68px
     color: #1FBAD6
@@ -378,13 +378,71 @@ nav
 footer
   min-height: 135px
   padding: 14px 23px 39px 23px
+  border: 2px solid black
 .footer
+  &_block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+  &_links
+    width: 160px
+    display: flex
+    justify-content: space-between
+    &_item 
+      display: flex 
+      justify-content: center
+      align-items: center
+      margin: 0 4px 
+      width: 32px
+      height: 32px
+      background-color: #070716
+      border-radius: 100%
+      text-decoration: none
+      i 
+        color: #fff
+  &_block > div
+      width: 33%
+      &:nth-child(3)
+        display: flex 
+        justify-content: flex-end
   &_line
     width: 300px
     height: 7px
     background-color: $reasons_color
     margin: 0 auto
- 
+  &_contacts
+    width: 390px
+    margin: 0 auto
+    &_label
+      display: flex
+      justify-content: space-between
+      padding: 0 auto
+      a
+        text-transform: uppercase
+        font-weight: 300
+        font-size: 15px
+        color: #070716
+        text-decoration: none
+    &_title
+      display: flex 
+      justify-content: space-between
+      margin-top: 10px
+      a 
+        color: #999999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+  &_language
+    display: block
+    margin: 0 auto
+    font-weight: 400
+    font-size: 11px
+    line-height: 68px
+    text-transform: uppercase
+    color: #1FBAD6
+    text-decoration: none
+    text-align: center
 
 
 
