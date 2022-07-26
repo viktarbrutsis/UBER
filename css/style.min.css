@@ -1,9 +1,7 @@
-@charset "UTF-8";
 * {
   font-family: "Roboto", sans-serif;
 }
 
-/* Обратите внимание на измения для "липкой" шапки, пометил их звездочкой ниже */
 header {
   position: relative;
   height: 50px;
@@ -34,8 +32,11 @@ nav {
   font-weight: 300;
 }
 .menu_item {
-  border-right: 2px dotted black;
+  border-right: 2px dotted white;
   padding-right: 28px;
+}
+.menu_item:last-child {
+  border-right: none;
 }
 
 .subheader {
@@ -148,6 +149,37 @@ nav {
 .reasons {
   padding: 71px 0 65px 0;
 }
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 35px;
+}
+.reasons_block_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+.reasons_descr {
+  width: 343px;
+}
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
 
 .label {
   position: relative;
@@ -193,38 +225,6 @@ nav {
 }
 .subtitle_white {
   color: white;
-}
-
-.reasons .reasons_block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
-}
-.reasons .reasons_block .reasons_round {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 26px;
-  width: 113px;
-  height: 113px;
-  background-color: #1eacc7;
-  border-radius: 100%;
-}
-.reasons .reasons_block .reasons_descr {
-  width: 343px;
-}
-.reasons .reasons_block .reasons_descr .reasons_subtitle {
-  line-height: 21px;
-  color: #1eacc7;
-  font-size: 17px;
-  font-weight: 400;
-}
-.reasons .reasons_block .reasons_descr .reasons_text {
-  color: #202020;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 21px;
 }
 
 .mobile {
@@ -489,4 +489,25 @@ footer {
   color: #1FBAD6;
   text-decoration: none;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .menu_item {
+    padding-right: 20px;
+  }
+  .menu_link {
+    font-size: 13px;
+  }
+  .promo_header {
+    font-size: 50px;
+  }
+  .reasons_block {
+    align-items: flex-start;
+  }
+  .reasons_descr {
+    width: 300px;
+  }
+  .mobile_item {
+    width: 300px;
+  }
 }
