@@ -10,13 +10,14 @@ header {
 
 nav {
   position: fixed;
-  /* * */
   width: 100%;
-  /* * */
   height: 50px;
   background-color: #212121;
   z-index: 2;
-  /* * */
+}
+
+.burger {
+  display: none;
 }
 
 .menu {
@@ -491,6 +492,10 @@ footer {
   text-align: center;
 }
 
+.visible {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .menu_item {
     padding-right: 20px;
@@ -589,5 +594,104 @@ footer {
   .menu_item {
     border-right: none;
     margin-top: 10px;
+  }
+  .burger {
+    display: block;
+    width: 32px;
+    height: 12px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 3px;
+    transition: 0.6s all;
+  }
+  .burger_active span {
+    margin-bottom: -2px;
+  }
+  .burger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .burger_active span:nth-child(2) {
+    display: none;
+  }
+  .burger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  .subheader .hidden {
+    display: none;
+  }
+  .subheader .visible {
+    display: block;
+  }
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  .subheader_btn {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    left: 20px;
+  }
+  .promo_header {
+    font-weight: 900;
+    line-height: 50px;
+  }
+  .promo_subheader {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .subheader_official {
+    display: none;
+  }
+  .subheader_logo {
+    margin-top: 24px;
+  }
+  .subheader_phone {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 11px;
+  }
+  .subheader_btn {
+    width: 140px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .subheader_descr {
+    display: none;
+  }
+  .promo {
+    min-height: 400px;
+    padding: 110px 0 50px 0;
+  }
+  .promo_header {
+    font-size: 36px;
+  }
+  .promo_subheader {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .promo_descr {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
