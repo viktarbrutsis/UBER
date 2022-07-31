@@ -340,18 +340,17 @@ nav
 .world
   min-height: 720px
   padding-top: 55px
-  background: url('../img/world_bg.png')
+  background: url('../img/world_bg.png') center (center/cover) no-repeat
   &_btn
     display: block
     margin: 400px auto 0 auto
-    width: 223px
+    width: 300px
     height: 68px
-    color: #1FBAD6
-    transform: uppercase
+    color: $reasons_color
+    text-transform: uppercase
     font-weight: 400
     font-size: 18px
-    line-height: 68px
-    background-color: black
+    // background-color: black
     border: none
     text-decoration: none
 footer
@@ -361,8 +360,8 @@ footer
 .footer
   &_block
     display: flex
-    justify-content: space-between
-    align-items: flex-start
+    // justify-content: space-between
+    // align-items: flex-start
     padding-top: 32px
   &_links
     width: 160px
@@ -422,5 +421,3 @@ footer
     color: #1FBAD6
     text-decoration: none
     text-align: center
-.visible
-  display: none
