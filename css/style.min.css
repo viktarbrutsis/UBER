@@ -416,6 +416,8 @@ footer {
 
 .footer_block {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   padding-top: 32px;
 }
 .footer_links {
@@ -719,6 +721,10 @@ footer {
   }
   .menu {
     width: 85%;
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
   }
   .menu_link {
     font-size: 14px;
