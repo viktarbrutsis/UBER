@@ -6,7 +6,11 @@
 # production
 /build
 
+<<<<<<< HEAD
 #misc
+=======
+# misc
+>>>>>>> 4af268816f398b17f526f1a27558f5b96d034c0e
 .DS_Store
 .env.local
 .env.development.local
@@ -15,4 +19,8 @@
 
 npm-debug.log*
 yarn-debug.log*
+<<<<<<< HEAD
 yarn-error.log*
+=======
+yarn-error.log*
+>>>>>>> 4af268816f398b17f526f1a27558f5b96d034c0e

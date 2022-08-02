@@ -28,6 +28,10 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
+<<<<<<< HEAD
 });
+=======
+})
+>>>>>>> 4af268816f398b17f526f1a27558f5b96d034c0e
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
