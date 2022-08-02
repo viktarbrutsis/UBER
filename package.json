@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "gulp",
-=======
->>>>>>> 4af268816f398b17f526f1a27558f5b96d034c0e
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
