@@ -96,6 +96,10 @@ nav {
   background-color: blue;
 }
 
+.visible {
+  display: none;
+}
+
 .promo {
   min-height: 800px;
   background: url("../img/uber_bg.png") center center/cover no-repeat;
